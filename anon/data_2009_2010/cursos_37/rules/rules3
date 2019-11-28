@@ -1,0 +1,10 @@
+evasao(A,B) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').
+evasao(A,B) :-
+   classe_idade_aluno(A,'').
+evasao(A,B) :-
+   ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), tem_facebook(A,0), cidade(A,'Vila Velha').
+evasao(A,B) :-
+   classe_idade_aluno(A,'E').

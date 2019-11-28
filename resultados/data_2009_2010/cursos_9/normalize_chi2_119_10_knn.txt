@@ -1,0 +1,29 @@
+trainer.py anon/data_2009_2010/cursos_9/output.txt resultados/data_2009_2010/cursos_9/normalize_chi2_119_10_knn.txt normalize chi2 119 10 knn 
+#########################################################
+
+Score Final:
+0.7483928571428571
+
+Matriz de Confusão final:
+[[10.9  0.5]
+ [ 3.2  0. ]]
+
+F1 Score Final:
+0.0
+
+Precision Score Final:
+0.0
+
+Recall Score Final:
+0.0
+Todos Scores:
+[0.625, 0.6875, 0.8, 0.8, 0.7857142857142857, 0.7857142857142857, 0.7857142857142857, 0.7857142857142857, 0.7857142857142857, 0.6428571428571429]
+
+Todos F1 Scores:
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+Todas Precisions:
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+Todos Recalls:
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

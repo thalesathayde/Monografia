@@ -1,0 +1,8 @@
+evasao(A,B) :-
+   tem_facebook(A,0), cidade(A,'Rio de Janeiro').
+evasao(A,B) :-
+   classe_idade_professor(C,D), genero_aluno(A,'F'), tem_facebook(A,0).
+evasao(A,B) :-
+   genero_aluno(A,'M'), classe_idade_aluno(A,'A').
+evasao(A,B) :-
+   genero_aluno(A,'M'), ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,aprovado,E,F,C,D), resultado_aluno_turma(A,reprovado,G,F,C,D).

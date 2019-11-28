@@ -1,0 +1,6 @@
+evasao(A) :-
+   cor_aluno(A,[80,97,114,100,97]), ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C), cidade(A,[83,63,111,32,71,111,110,99,97,108,111]).
+evasao(A) :-
+   cor_aluno(A,[78,63,111,32,68,101,99,108,97,114,97,100,111]), ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C), classe_idade_aluno(A,'A').
+evasao(A) :-
+   genero_aluno(A,[77]), tem_facebook(A,0), classe_idade_aluno(A,'B').

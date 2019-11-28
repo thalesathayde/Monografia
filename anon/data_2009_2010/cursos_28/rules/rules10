@@ -1,0 +1,8 @@
+evasao(A,B) :-
+   genero_aluno(A,'M').
+evasao(A,B) :-
+   genero_aluno(A,'F'), ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,G).
+evasao(A,B) :-
+   genero_aluno(A,'F'), classe_idade_aluno(A,'B').
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').

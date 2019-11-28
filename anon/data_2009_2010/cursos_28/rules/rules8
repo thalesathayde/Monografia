@@ -1,0 +1,10 @@
+evasao(A,B) :-
+   genero_aluno(A,'M').
+evasao(A,B) :-
+   genero_aluno(A,'F'), tem_facebook(A,0), classe_idade_aluno(A,'A').
+evasao(A,B) :-
+   genero_aluno(A,'F'), estado_civil(A,'Solteiro(a)'), classe_idade_aluno(A,'B').
+evasao(A,B) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'F').
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').

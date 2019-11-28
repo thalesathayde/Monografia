@@ -1,0 +1,261 @@
+
+[settings]
+        abduce=false
+        cache_clauselength=3
+        caching=false
+        check_good=false
+        check_redundant=false
+        check_useless=false
+        clauselength=10
+        condition=false
+        confidence= 0.95
+        construct_bottom=saturation
+        depth=10
+        evalfn=coverage
+        explore=false
+        good=false
+        greedy=true
+        gsamplesize=100
+        i=2
+        interactive=false
+        language=(+inf)
+        lazy_negs=false
+        lazy_on_contradiction=false
+        lazy_on_cost=false
+        lookahead=1
+        max_abducibles=2
+        max_features=(+inf)
+        minacc= 0
+        mingain= 0.05
+        minpos=2
+        minposfrac=0
+        minscore=(-inf)
+        moves=5
+        newvars=(+inf)
+        nodes=10000
+        noise=10
+        nreduce_bottom=false
+        openlist=(+inf)
+        optimise_clauses=false
+        permute_bottom=false
+        portray_examples=false
+        portray_hypothesis=false
+        portray_literals=false
+        portray_search=false
+        print=4
+        prior=[0.1777777777777778-neg,0.8222222222222222-pos]
+        proof_strategy=restricted_sld
+        prooftime=(+inf)
+        prune_tree=false
+        record=true
+        recordfile=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/cursos_28//logs/log4
+        recordfile_stream=$stream(5)
+        refine=false
+        refineop=false
+        resample=1
+        rls_type=gsat
+        samplesize=0
+        search=bf
+        searchstrat=bf
+        searchtime=(+inf)
+        skolemvars=10000
+        splitvars=false
+        stage=command
+        store_bottom=false
+        subsample=false
+        subsamplesize=(+inf)
+        test_neg=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/cursos_28/test_evasao4.n
+        test_pos=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/cursos_28/test_evasao4.f
+        threads=1
+        train_neg=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/cursos_28//train_evasao4.n
+        train_pos=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/cursos_28//train_evasao4.f
+        tries=10
+        typeoverlap= 0.95
+        uniform_sample=false
+        updateback=true
+        verbosity=1
+        version=5
+[sat] [1]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   genero_aluno(A,'M').
+[pos cover = 52 neg cover = 7] [pos-neg] [45]
+[clause label] [[52,7,2,45]]
+[clauses constructed] [10]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [5.909999999999999]
+[best clause]
+evasao(A,B) :-
+   genero_aluno(A,'M').
+[positive examples left] [59]
+[estimated time to finish (secs)] [6.705576923076922]
+[sat] [3]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cidade(A,'Niteroi').
+[pos cover = 12 neg cover = 8] [pos-neg] [4]
+[clause label] [[12,8,2,4]]
+[clauses constructed] [45]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   genero_aluno(A,'F'), cidade(A,'Niteroi').
+[pos cover = 12 neg cover = 7] [pos-neg] [5]
+[clause label] [[12,7,3,5]]
+[clauses constructed] [82]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   genero_aluno(A,'F'), classe_idade_aluno(A,'A').
+[pos cover = 23 neg cover = 7] [pos-neg] [16]
+[clause label] [[23,7,3,16]]
+[clauses constructed] [84]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'Branca'), genero_aluno(A,'F').
+[pos cover = 28 neg cover = 9] [pos-neg] [19]
+[clause label] [[28,9,3,19]]
+[clauses constructed] [1023]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [3.77]
+[best clause]
+evasao(A,B) :-
+   cor_aluno(A,'Branca'), genero_aluno(A,'F').
+[positive examples left] [31]
+[estimated time to finish (secs)] [3.751]
+[sat] [5]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'N?o Declarado').
+[pos cover = 15 neg cover = 3] [pos-neg] [12]
+[clause label] [[15,3,2,12]]
+[clauses constructed] [8]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'F').
+[pos cover = 15 neg cover = 2] [pos-neg] [13]
+[clause label] [[15,2,3,13]]
+[clauses constructed] [88]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [3.638]
+[best clause]
+evasao(A,B) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'F').
+[positive examples left] [16]
+[estimated time to finish (secs)] [2.243031578947368]
+[sat] [6]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'Parda').
+[pos cover = 13 neg cover = 5] [pos-neg] [8]
+[clause label] [[13,5,2,8]]
+[clauses constructed] [8]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'Parda'), genero_aluno(A,'F').
+[pos cover = 13 neg cover = 4] [pos-neg] [9]
+[clause label] [[13,4,3,9]]
+[clauses constructed] [42]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'Parda'), tem_facebook(A,0).
+[pos cover = 13 neg cover = 3] [pos-neg] [10]
+[clause label] [[13,3,3,10]]
+[clauses constructed] [68]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [2.835000000000001]
+[best clause]
+evasao(A,B) :-
+   cor_aluno(A,'Parda'), tem_facebook(A,0).
+[positive examples left] [3]
+[estimated time to finish (secs)] [0.4486944444444444]
+[sat] [9]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'Negra').
+[pos cover = 3 neg cover = 1] [pos-neg] [2]
+[clause label] [[3,1,2,2]]
+[clauses constructed] [8]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'F').
+[pos cover = 3 neg cover = 0] [pos-neg] [3]
+[clause label] [[3,0,3,3]]
+[clauses constructed] [24]
+[-------------------------------------]
+[clauses constructed] [33]
+[search time] [0.005000000000002558]
+[best clause]
+evasao(A,B) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'F').
+[positive examples left] [0]
+[estimated time to finish (secs)] [0]
+
+[theory]
+
+[Rule 1] [Pos cover = 52 Neg cover = 7]
+evasao(A,B) :-
+   genero_aluno(A,'M').
+
+[Rule 2] [Pos cover = 28 Neg cover = 9]
+evasao(A,B) :-
+   cor_aluno(A,'Branca'), genero_aluno(A,'F').
+
+[Rule 3] [Pos cover = 15 Neg cover = 2]
+evasao(A,B) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'F').
+
+[Rule 4] [Pos cover = 23 Neg cover = 3]
+evasao(A,B) :-
+   cor_aluno(A,'Parda'), tem_facebook(A,0).
+
+[Rule 5] [Pos cover = 3 Neg cover = 0]
+evasao(A,B) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'F').
+
+[Training set performance]
+           Actual
+        +          -  
+     + 111        21        132 
+Pred 
+     -  0          3          3  
+
+       111        24        135 
+
+Accuracy = 0.8444444444444444
+[Training set summary] [[111,21,0,3]]
+[Test set performance]
+          Actual
+       +        - 
+     + 12        2        14 
+Pred 
+     - 0        0        0 
+
+       12        2        14 
+
+Accuracy = 0.8571428571428571
+[Test set summary] [[12,2,0,0]]
+[time taken] [16.261]
+
+[total clauses constructed] [40033]

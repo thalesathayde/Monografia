@@ -1,0 +1,1687 @@
+
+[settings]
+        abduce=false
+        cache_clauselength=3
+        caching=false
+        check_good=false
+        check_redundant=false
+        check_useless=false
+        clauselength=10
+        condition=false
+        confidence= 0.95
+        construct_bottom=saturation
+        depth=10
+        evalfn=coverage
+        explore=false
+        good=false
+        greedy=true
+        gsamplesize=100
+        i=2
+        interactive=false
+        language=(+inf)
+        lazy_negs=false
+        lazy_on_contradiction=false
+        lazy_on_cost=false
+        lookahead=1
+        max_abducibles=2
+        max_features=(+inf)
+        minacc= 0
+        mingain= 0.05
+        minpos=2
+        minposfrac=0
+        minscore=(-inf)
+        moves=5
+        newvars=(+inf)
+        nodes=10000
+        noise=10
+        nreduce_bottom=false
+        openlist=(+inf)
+        optimise_clauses=false
+        permute_bottom=false
+        portray_examples=false
+        portray_hypothesis=false
+        portray_literals=false
+        portray_search=false
+        print=4
+        prior=[0.3836633663366337-pos,0.6163366336633663-neg]
+        proof_strategy=restricted_sld
+        prooftime=(+inf)
+        prune_tree=false
+        record=true
+        recordfile=output_fix
+        recordfile_stream=$stream(4)
+        refine=false
+        refineop=false
+        resample=1
+        rls_type=gsat
+        samplesize=0
+        search=bf
+        searchstrat=bf
+        searchtime=(+inf)
+        skolemvars=10000
+        splitvars=false
+        stage=command
+        store_bottom=false
+        subsample=false
+        subsamplesize=(+inf)
+        threads=1
+        train_neg=evasao.n
+        train_pos=evasao.f
+        tries=10
+        typeoverlap= 0.95
+        uniform_sample=false
+        updateback=true
+        verbosity=1
+        version=5
+[sat] [1]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), classe_idade_aluno(A,'C').
+[pos cover = 10 neg cover = 6] [pos-neg] [4]
+[clause label] [[10,6,3,4]]
+[clauses constructed] [136]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'N?o Declarado').
+[pos cover = 22 neg cover = 7] [pos-neg] [15]
+[clause label] [[22,7,3,15]]
+[clauses constructed] [141]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [7.470000000000001]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'N?o Declarado').
+[positive examples left] [288]
+[estimated time to finish (secs)] [97.78909090909092]
+[sat] [2]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), classe_idade_aluno(A,'C').
+[pos cover = 8 neg cover = 6] [pos-neg] [2]
+[clause label] [[8,6,3,2]]
+[clauses constructed] [208]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   genero_aluno(A,'M'), classe_idade_aluno(A,'C').
+[pos cover = 24 neg cover = 9] [pos-neg] [15]
+[clause label] [[24,9,3,15]]
+[clauses constructed] [411]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [9.809000000000001]
+[best clause]
+evasao(A) :-
+   genero_aluno(A,'M'), classe_idade_aluno(A,'C').
+[positive examples left] [264]
+[estimated time to finish (secs)] [99.16643478260872]
+[sat] [3]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   classe_idade_aluno(A,'E').
+[pos cover = 8 neg cover = 1] [pos-neg] [7]
+[clause label] [[8,1,2,7]]
+[clauses constructed] [128]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [14.052]
+[best clause]
+evasao(A) :-
+   classe_idade_aluno(A,'E').
+[positive examples left] [256]
+[estimated time to finish (secs)] [148.5321481481482]
+[sat] [7]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'N?o Declarado'), classe_idade_aluno(A,'B').
+[pos cover = 8 neg cover = 5] [pos-neg] [3]
+[clause label] [[8,5,4,3]]
+[clauses constructed] [3932]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [8.557000000000002]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'N?o Declarado'), classe_idade_aluno(A,'B').
+[positive examples left] [248]
+[estimated time to finish (secs)] [159.552]
+[sat] [9]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   classe_idade_aluno(A,'D').
+[pos cover = 8 neg cover = 3] [pos-neg] [5]
+[clause label] [[8,3,2,5]]
+[clauses constructed] [155]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [16.307]
+[best clause]
+evasao(A) :-
+   classe_idade_aluno(A,'D').
+[positive examples left] [240]
+[estimated time to finish (secs)] [192.6685714285715]
+[sat] [10]
+[clauses constructed] [10000]
+[search time] [11.975]
+[best clause]
+evasao(942111).
+[positive examples left] [239]
+[estimated time to finish (secs)] [229.4736619718311]
+[sat] [15]
+[clauses constructed] [10000]
+[search time] [13.70599999999999]
+[best clause]
+evasao(1027141).
+[positive examples left] [238]
+[estimated time to finish (secs)] [270.6456666666667]
+[sat] [18]
+[clauses constructed] [10000]
+[search time] [9.293000000000006]
+[best clause]
+evasao(1037081).
+[positive examples left] [237]
+[estimated time to finish (secs)] [295.9870273972603]
+[sat] [24]
+[clauses constructed] [10000]
+[search time] [11.59700000000001]
+[best clause]
+evasao(10915004).
+[positive examples left] [236]
+[estimated time to finish (secs)] [327.7402162162163]
+[sat] [25]
+[clauses constructed] [10000]
+[search time] [37.05299999999998]
+[best clause]
+evasao(10915018).
+[positive examples left] [235]
+[estimated time to finish (secs)] [438.0995333333334]
+[sat] [26]
+[clauses constructed] [10000]
+[search time] [26.38000000000002]
+[best clause]
+evasao(10915019).
+[positive examples left] [234]
+[estimated time to finish (secs)] [511.7179736842106]
+[sat] [31]
+[clauses constructed] [10000]
+[search time] [8.575999999999993]
+[best clause]
+evasao(10915050).
+[positive examples left] [233]
+[estimated time to finish (secs)] [528.8646103896104]
+[sat] [33]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), genero_aluno(A,'F'), tem_facebook(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+[pos cover = 12 neg cover = 10] [pos-neg] [2]
+[clause label] [[12,10,7,2]]
+[clauses constructed] [8112]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.671999999999997]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), genero_aluno(A,'F'), tem_facebook(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+[positive examples left] [221]
+[estimated time to finish (secs)] [445.5931123595506]
+[sat] [34]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), genero_aluno(A,'M'), estado_civil(A,'Solteiro(a)'), cidade(A,'Nova Friburgo').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,5,2]]
+[clauses constructed] [967]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.519999999999982]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,15), genero_aluno(A,'M'), estado_civil(A,'Solteiro(a)'), cidade(A,'Nova Friburgo').
+[positive examples left] [219]
+[estimated time to finish (secs)] [442.7337692307693]
+[sat] [37]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), genero_aluno(A,'M'), cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'B').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,5,2]]
+[clauses constructed] [784]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), genero_aluno(A,'M'), classe_idade_aluno(A,'B').
+[pos cover = 4 neg cover = 1] [pos-neg] [3]
+[clause label] [[4,1,5,3]]
+[clauses constructed] [794]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'B').
+[pos cover = 6 neg cover = 2] [pos-neg] [4]
+[clause label] [[6,2,5,4]]
+[clauses constructed] [806]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), estado_civil(A,'Solteiro(a)'), cidade(A,'Rio de Janeiro'), 
+   classe_idade_aluno(A,'B').
+[pos cover = 6 neg cover = 1] [pos-neg] [5]
+[clause label] [[6,1,6,5]]
+[clauses constructed] [2988]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), estado_civil(A,'Solteiro(a)'), tem_facebook(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'B').
+[pos cover = 6 neg cover = 0] [pos-neg] [6]
+[clause label] [[6,0,7,6]]
+[clauses constructed] [8155]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.74799999999999]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), estado_civil(A,'Solteiro(a)'), tem_facebook(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'B').
+[positive examples left] [213]
+[estimated time to finish (secs)] [414.3947938144329]
+[sat] [38]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cidade(A,'Barra Mansa').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,2,2]]
+[clauses constructed] [16]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.878999999999991]
+[best clause]
+evasao(A) :-
+   cidade(A,'Barra Mansa').
+[positive examples left] [211]
+[estimated time to finish (secs)] [412.6094343434343]
+[sat] [40]
+[clauses constructed] [10000]
+[search time] [10.33199999999999]
+[best clause]
+evasao(10915067).
+[positive examples left] [210]
+[estimated time to finish (secs)] [428.2446]
+[sat] [42]
+[clauses constructed] [10000]
+[search time] [45.446]
+[best clause]
+evasao(10927011).
+[positive examples left] [209]
+[estimated time to finish (secs)] [516.0272079207921]
+[sat] [43]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C), tem_facebook(A,0), cidade(A,'S?o Goncalo').
+[pos cover = 6 neg cover = 4] [pos-neg] [2]
+[clause label] [[6,4,5,2]]
+[clauses constructed] [3439]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [43.97400000000002]
+[best clause]
+evasao(A) :-
+   ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C), tem_facebook(A,0), cidade(A,'S?o Goncalo').
+[positive examples left] [203]
+[estimated time to finish (secs)] [556.5349345794392]
+[sat] [45]
+[clauses constructed] [10000]
+[search time] [40.483]
+[best clause]
+evasao(10927020).
+[positive examples left] [202]
+[estimated time to finish (secs)] [624.3838703703703]
+[sat] [46]
+[clauses constructed] [10000]
+[search time] [66.80399999999997]
+[best clause]
+evasao(10927023).
+[positive examples left] [201]
+[estimated time to finish (secs)] [738.7819541284402]
+[sat] [47]
+[clauses constructed] [10000]
+[search time] [10.45699999999999]
+[best clause]
+evasao(10927027).
+[positive examples left] [200]
+[estimated time to finish (secs)] [747.4363636363636]
+[sat] [48]
+[clauses constructed] [10000]
+[search time] [4.403999999999996]
+[best clause]
+evasao(10927050).
+[positive examples left] [199]
+[estimated time to finish (secs)] [744.8946486486486]
+[sat] [49]
+[clauses constructed] [10000]
+[search time] [43.98199999999997]
+[best clause]
+evasao(10927053).
+[positive examples left] [198]
+[estimated time to finish (secs)] [812.2879285714286]
+[sat] [50]
+[clauses constructed] [10000]
+[search time] [43.041]
+[best clause]
+evasao(10927056).
+[positive examples left] [197]
+[estimated time to finish (secs)] [876.069460176991]
+[sat] [51]
+[clauses constructed] [10000]
+[search time] [4.435000000000002]
+[best clause]
+evasao(10927058).
+[positive examples left] [196]
+[estimated time to finish (secs)] [871.6016842105262]
+[sat] [52]
+[clauses constructed] [10000]
+[search time] [42.48699999999997]
+[best clause]
+evasao(10927059).
+[positive examples left] [195]
+[estimated time to finish (secs)] [931.6574347826084]
+[sat] [53]
+[clauses constructed] [10000]
+[search time] [10.72299999999996]
+[best clause]
+evasao(10937003).
+[positive examples left] [194]
+[estimated time to finish (secs)] [936.8226551724134]
+[sat] [54]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cidade(A,'Juiz de Fora').
+[pos cover = 4 neg cover = 0] [pos-neg] [4]
+[clause label] [[4,0,2,4]]
+[clauses constructed] [33]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [23.84100000000001]
+[best clause]
+evasao(A) :-
+   cidade(A,'Juiz de Fora').
+[positive examples left] [190]
+[estimated time to finish (secs)] [924.6714166666663]
+[sat] [55]
+[clauses constructed] [10000]
+[search time] [22.86900000000003]
+[best clause]
+evasao(10937013).
+[positive examples left] [189]
+[estimated time to finish (secs)] [947.924033057851]
+[sat] [56]
+[clauses constructed] [10000]
+[search time] [14.03800000000001]
+[best clause]
+evasao(10937017).
+[positive examples left] [188]
+[estimated time to finish (secs)] [956.8121311475408]
+[sat] [58]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'M'), cidade(A,'Rio de Janeiro').
+[pos cover = 4 neg cover = 2] [pos-neg] [2]
+[clause label] [[4,2,4,2]]
+[clauses constructed] [265]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'M'), tem_facebook(A,0), cidade(A,'Rio de Janeiro').
+[pos cover = 4 neg cover = 1] [pos-neg] [3]
+[clause label] [[4,1,5,3]]
+[clauses constructed] [1782]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [55.67700000000002]
+[best clause]
+evasao(A) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'M'), tem_facebook(A,0), cidade(A,'Rio de Janeiro').
+[positive examples left] [184]
+[estimated time to finish (secs)] [988.0318095238093]
+[sat] [59]
+[clauses constructed] [10000]
+[search time] [36.678]
+[best clause]
+evasao(10937021).
+[positive examples left] [183]
+[estimated time to finish (secs)] [1027.775551181102]
+[sat] [60]
+[clauses constructed] [10000]
+[search time] [61.43200000000002]
+[best clause]
+evasao(10937026).
+[positive examples left] [182]
+[estimated time to finish (secs)] [1101.522296875]
+[sat] [61]
+[clauses constructed] [10000]
+[search time] [57.99700000000007]
+[best clause]
+evasao(10937029).
+[positive examples left] [181]
+[estimated time to finish (secs)] [1168.353596899225]
+[sat] [62]
+[clauses constructed] [10000]
+[search time] [19.52099999999996]
+[best clause]
+evasao(10937031).
+[positive examples left] [180]
+[estimated time to finish (secs)] [1179.99]
+[sat] [63]
+[clauses constructed] [10000]
+[search time] [60.38699999999994]
+[best clause]
+evasao(10937040).
+[positive examples left] [179]
+[estimated time to finish (secs)] [1246.990519083969]
+[sat] [64]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'Indigena'), tem_facebook(A,0).
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,3,2]]
+[clauses constructed] [72]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [24.08799999999997]
+[best clause]
+evasao(A) :-
+   cor_aluno(A,'Indigena'), tem_facebook(A,0).
+[positive examples left] [177]
+[estimated time to finish (secs)] [1246.572406015037]
+[sat] [65]
+[clauses constructed] [10000]
+[search time] [56.5]
+[best clause]
+evasao(10937045).
+[positive examples left] [176]
+[estimated time to finish (secs)] [1304.488358208955]
+[sat] [66]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), estado_civil(A,'').
+[pos cover = 3 neg cover = 1] [pos-neg] [2]
+[clause label] [[3,1,3,2]]
+[clauses constructed] [102]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), estado_civil(A,'').
+[pos cover = 3 neg cover = 0] [pos-neg] [3]
+[clause label] [[3,0,4,3]]
+[clauses constructed] [1990]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [18.30199999999991]
+[best clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), estado_civil(A,'').
+[positive examples left] [173]
+[estimated time to finish (secs)] [1277.285518248175]
+[sat] [67]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'Amarela'), genero_aluno(A,'M').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,3,2]]
+[clauses constructed] [58]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [35.51100000000008]
+[best clause]
+evasao(A) :-
+   cor_aluno(A,'Amarela'), genero_aluno(A,'M').
+[positive examples left] [171]
+[estimated time to finish (secs)] [1288.039661870503]
+[sat] [68]
+[clauses constructed] [10000]
+[search time] [21.34900000000016]
+[best clause]
+evasao(10942003).
+[positive examples left] [170]
+[estimated time to finish (secs)] [1297.284571428571]
+[sat] [69]
+[clauses constructed] [10000]
+[search time] [14.7320000000002]
+[best clause]
+evasao(10942006).
+[positive examples left] [169]
+[estimated time to finish (secs)] [1298.164510638298]
+[sat] [70]
+[clauses constructed] [10000]
+[search time] [21.07200000000012]
+[best clause]
+evasao(10942008).
+[positive examples left] [168]
+[estimated time to finish (secs)] [1306.325408450705]
+[sat] [71]
+[clauses constructed] [10000]
+[search time] [21.73299999999995]
+[best clause]
+evasao(10942009).
+[positive examples left] [167]
+[estimated time to finish (secs)] [1314.849391608392]
+[sat] [72]
+[clauses constructed] [10000]
+[search time] [6.458000000000084]
+[best clause]
+evasao(10942021).
+[positive examples left] [166]
+[estimated time to finish (secs)] [1305.344458333334]
+[sat] [74]
+[clauses constructed] [10000]
+[search time] [19.22800000000007]
+[best clause]
+evasao(10942028).
+[positive examples left] [165]
+[estimated time to finish (secs)] [1310.412931034483]
+[sat] [75]
+[clauses constructed] [10000]
+[search time] [29.84799999999996]
+[best clause]
+evasao(10942034).
+[positive examples left] [164]
+[estimated time to finish (secs)] [1327.077890410959]
+[sat] [76]
+[clauses constructed] [10000]
+[search time] [3.682000000000016]
+[best clause]
+evasao(10942045).
+[positive examples left] [163]
+[estimated time to finish (secs)] [1314.096020408164]
+[sat] [77]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,42), cor_aluno(A,'Branca'), genero_aluno(A,'M'), tem_twitter(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+[pos cover = 14 neg cover = 9] [pos-neg] [5]
+[clause label] [[14,9,7,5]]
+[clauses constructed] [8045]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [3.769000000000005]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,42), cor_aluno(A,'Branca'), genero_aluno(A,'M'), tem_twitter(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+[positive examples left] [149]
+[estimated time to finish (secs)] [1100.262273291926]
+[sat] [79]
+[clauses constructed] [10000]
+[search time] [3.332000000000107]
+[best clause]
+evasao(10942052).
+[positive examples left] [148]
+[estimated time to finish (secs)] [1089.175851851852]
+[sat] [80]
+[clauses constructed] [10000]
+[search time] [32.98399999999992]
+[best clause]
+evasao(10942053).
+[positive examples left] [147]
+[estimated time to finish (secs)] [1104.925950920246]
+[sat] [81]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), tem_facebook(A,0), tem_twitter(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+[pos cover = 6 neg cover = 3] [pos-neg] [3]
+[clause label] [[6,3,7,3]]
+[clauses constructed] [8112]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [3.825000000000045]
+[best clause]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), tem_facebook(A,0), tem_twitter(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+[positive examples left] [141]
+[estimated time to finish (secs)] [1025.391213017752]
+[sat] [83]
+[clauses constructed] [10000]
+[search time] [4.126000000000204]
+[best clause]
+evasao(10942060).
+[positive examples left] [140]
+[estimated time to finish (secs)] [1015.527882352942]
+[sat] [84]
+[clauses constructed] [10000]
+[search time] [61.19000000000005]
+[best clause]
+evasao(10942061).
+[positive examples left] [139]
+[estimated time to finish (secs)] [1052.117011695907]
+[sat] [85]
+[clauses constructed] [10000]
+[search time] [17.91600000000017]
+[best clause]
+evasao(10942062).
+[positive examples left] [138]
+[estimated time to finish (secs)] [1052.849337209303]
+[sat] [87]
+[clauses constructed] [10000]
+[search time] [9.295000000000073]
+[best clause]
+evasao(11015013).
+[positive examples left] [137]
+[estimated time to finish (secs)] [1046.539040462428]
+[sat] [88]
+[clauses constructed] [10000]
+[search time] [8.028999999999996]
+[best clause]
+evasao(11015027).
+[positive examples left] [136]
+[estimated time to finish (secs)] [1039.204919540231]
+[sat] [90]
+[clauses constructed] [10000]
+[search time] [7.349999999999909]
+[best clause]
+evasao(11015033).
+[positive examples left] [135]
+[estimated time to finish (secs)] [1031.339057142858]
+[sat] [91]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cidade(A,'Duque de Caxias').
+[pos cover = 3 neg cover = 0] [pos-neg] [3]
+[clause label] [[3,0,2,3]]
+[clauses constructed] [52]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [21.53600000000006]
+[best clause]
+evasao(A) :-
+   cidade(A,'Duque de Caxias').
+[positive examples left] [132]
+[estimated time to finish (secs)] [1007.395078651686]
+[sat] [92]
+[clauses constructed] [10000]
+[search time] [10.30600000000004]
+[best clause]
+evasao(11015057).
+[positive examples left] [131]
+[estimated time to finish (secs)] [1001.72040782123]
+[sat] [93]
+[clauses constructed] [10000]
+[search time] [18.62100000000009]
+[best clause]
+evasao(11015062).
+[positive examples left] [130]
+[estimated time to finish (secs)] [1001.999555555556]
+[sat] [94]
+[clauses constructed] [10000]
+[search time] [11.60900000000015]
+[best clause]
+evasao(11015069).
+[positive examples left] [129]
+[estimated time to finish (secs)] [997.0723591160228]
+[sat] [96]
+[clauses constructed] [10000]
+[search time] [32.10400000000004]
+[best clause]
+evasao(11015074).
+[positive examples left] [128]
+[estimated time to finish (secs)] [1006.485802197803]
+[sat] [99]
+[clauses constructed] [10000]
+[search time] [8.05600000000004]
+[best clause]
+evasao(11027015).
+[positive examples left] [127]
+[estimated time to finish (secs)] [998.7564535519134]
+[sat] [100]
+[clauses constructed] [10000]
+[search time] [8.968000000000075]
+[best clause]
+evasao(11027018).
+[positive examples left] [126]
+[estimated time to finish (secs)] [991.6480760869574]
+[sat] [101]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'N?o Declarado'), resultado_aluno_turma(A,reprovado,B,C,D,E), professor_turma(F,C,B,G), 
+   classe_idade_aluno(A,'A').
+[pos cover = 4 neg cover = 2] [pos-neg] [2]
+[clause label] [[4,2,6,2]]
+[clauses constructed] [9759]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [47.47000000000003]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'N?o Declarado'), resultado_aluno_turma(A,reprovado,B,C,D,E), professor_turma(F,C,B,G), 
+   classe_idade_aluno(A,'A').
+[positive examples left] [122]
+[estimated time to finish (secs)] [970.5430957446818]
+[sat] [102]
+[clauses constructed] [10000]
+[search time] [35.01999999999998]
+[best clause]
+evasao(11027034).
+[positive examples left] [121]
+[estimated time to finish (secs)] [979.9149788359797]
+[sat] [103]
+[clauses constructed] [10000]
+[search time] [12.9190000000001]
+[best clause]
+evasao(11027044).
+[positive examples left] [120]
+[estimated time to finish (secs)] [974.8610526315797]
+[sat] [104]
+[clauses constructed] [10000]
+[search time] [37.92599999999993]
+[best clause]
+evasao(11027064).
+[positive examples left] [119]
+[estimated time to finish (secs)] [985.3050471204195]
+[sat] [105]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'Parda'), classe_idade_aluno(A,'A').
+[pos cover = 11 neg cover = 7] [pos-neg] [4]
+[clause label] [[11,7,4,4]]
+[clauses constructed] [183]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.271999999999935]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'Parda'), classe_idade_aluno(A,'A').
+[positive examples left] [108]
+[estimated time to finish (secs)] [847.8149702970303]
+[sat] [106]
+[clauses constructed] [10000]
+[search time] [46.30600000000004]
+[best clause]
+evasao(11027079).
+[positive examples left] [107]
+[estimated time to finish (secs)] [860.2346699507395]
+[sat] [107]
+[clauses constructed] [10000]
+[search time] [25.25799999999981]
+[best clause]
+evasao(11027083).
+[positive examples left] [106]
+[estimated time to finish (secs)] [861.1419215686279]
+[sat] [108]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   cidade(A,'Vila Velha').
+[pos cover = 4 neg cover = 2] [pos-neg] [2]
+[clause label] [[4,2,2,2]]
+[clauses constructed] [18]
+[-------------------------------------]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   tem_facebook(A,0), cidade(A,'Vila Velha').
+[pos cover = 4 neg cover = 1] [pos-neg] [3]
+[clause label] [[4,1,3,3]]
+[clauses constructed] [61]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [5.530999999999949]
+[best clause]
+evasao(A) :-
+   tem_facebook(A,0), cidade(A,'Vila Velha').
+[positive examples left] [102]
+[estimated time to finish (secs)] [815.4228173076929]
+[sat] [109]
+[clauses constructed] [10000]
+[search time] [19.28700000000003]
+[best clause]
+evasao(11027090).
+[positive examples left] [101]
+[estimated time to finish (secs)] [812.8856937799048]
+[sat] [110]
+[clauses constructed] [10000]
+[search time] [23.7360000000001]
+[best clause]
+evasao(11037005).
+[positive examples left] [100]
+[estimated time to finish (secs)] [812.3076190476196]
+[sat] [112]
+[clauses constructed] [10000]
+[search time] [8.518000000000029]
+[best clause]
+evasao(11037016).
+[positive examples left] [99]
+[estimated time to finish (secs)] [804.3698388625597]
+[sat] [114]
+[clauses constructed] [10000]
+[search time] [8.125]
+[best clause]
+evasao(11037040).
+[positive examples left] [98]
+[estimated time to finish (secs)] [796.2449150943402]
+[sat] [115]
+[clauses constructed] [10000]
+[search time] [20.27399999999989]
+[best clause]
+evasao(11037059).
+[positive examples left] [97]
+[estimated time to finish (secs)] [793.6526338028175]
+[sat] [116]
+[clauses constructed] [10000]
+[search time] [9.539999999999964]
+[best clause]
+evasao(11037064).
+[positive examples left] [96]
+[estimated time to finish (secs)] [786.0798504672902]
+[sat] [117]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   estado_civil(A,'N?o informado').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,2,2]]
+[clauses constructed] [12]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [26.51099999999997]
+[best clause]
+evasao(A) :-
+   estado_civil(A,'N?o informado').
+[positive examples left] [94]
+[estimated time to finish (secs)] [774.1135000000004]
+[sat] [119]
+[clauses constructed] [10000]
+[search time] [3.385999999999967]
+[best clause]
+evasao(11042055).
+[positive examples left] [93]
+[estimated time to finish (secs)] [763.8000000000004]
+[sat] [123]
+[clauses constructed] [10000]
+[search time] [29.74699999999984]
+[best clause]
+evasao(11042074).
+[positive examples left] [92]
+[estimated time to finish (secs)] [764.6748807339453]
+[sat] [124]
+[clauses constructed] [10000]
+[search time] [6.837999999999965]
+[best clause]
+evasao(11042086).
+[positive examples left] [91]
+[estimated time to finish (secs)] [755.7508447488588]
+[sat] [125]
+[clauses constructed] [10000]
+[search time] [85.75099999999998]
+[best clause]
+evasao(11042094).
+[positive examples left] [90]
+[estimated time to finish (secs)] [779.128363636364]
+[sat] [127]
+[clauses constructed] [10000]
+[search time] [10.60500000000002]
+[best clause]
+evasao(11042116).
+[positive examples left] [89]
+[estimated time to finish (secs)] [771.2558778280545]
+[sat] [129]
+[clauses constructed] [10000]
+[search time] [26.49000000000001]
+[best clause]
+evasao(20915072).
+[positive examples left] [88]
+[estimated time to finish (secs)] [769.6555315315319]
+[sat] [131]
+[clauses constructed] [10000]
+[search time] [20.74800000000005]
+[best clause]
+evasao(20915076).
+[positive examples left] [87]
+[estimated time to finish (secs)] [765.5918071748881]
+[sat] [137]
+[clauses constructed] [10000]
+[search time] [20.84199999999987]
+[best clause]
+evasao(20915087).
+[positive examples left] [86]
+[estimated time to finish (secs)] [761.4152053571431]
+[sat] [138]
+[clauses constructed] [10000]
+[search time] [10.99900000000002]
+[best clause]
+evasao(20915088).
+[positive examples left] [85]
+[estimated time to finish (secs)] [753.3720000000003]
+[sat] [139]
+[clauses constructed] [10000]
+[search time] [9.954999999999927]
+[best clause]
+evasao(20915093).
+[positive examples left] [84]
+[estimated time to finish (secs)] [744.9146017699117]
+[sat] [140]
+[clauses constructed] [10000]
+[search time] [15.45799999999986]
+[best clause]
+evasao(20915104).
+[positive examples left] [83]
+[estimated time to finish (secs)] [738.4561189427315]
+[sat] [141]
+[clauses constructed] [10000]
+[search time] [4.644000000000005]
+[best clause]
+evasao(20915114).
+[positive examples left] [82]
+[estimated time to finish (secs)] [728.0294473684212]
+[sat] [145]
+[clauses constructed] [10000]
+[search time] [18.30599999999981]
+[best clause]
+evasao(20915122).
+[positive examples left] [81]
+[estimated time to finish (secs)] [722.485689956332]
+[sat] [146]
+[clauses constructed] [10000]
+[search time] [11.8449999999998]
+[best clause]
+evasao(20927067).
+[positive examples left] [80]
+[estimated time to finish (secs)] [714.583652173913]
+[sat] [148]
+[clauses constructed] [10000]
+[search time] [10.23500000000013]
+[best clause]
+evasao(20927074).
+[positive examples left] [79]
+[estimated time to finish (secs)] [706.0968701298701]
+[sat] [149]
+[clauses constructed] [10000]
+[search time] [37.43899999999985]
+[best clause]
+evasao(20927077).
+[positive examples left] [78]
+[estimated time to finish (secs)] [706.7411896551723]
+[sat] [150]
+[clauses constructed] [10000]
+[search time] [20.83199999999988]
+[best clause]
+evasao(20927088).
+[positive examples left] [77]
+[estimated time to finish (secs)] [701.5704635193132]
+[sat] [151]
+[clauses constructed] [10000]
+[search time] [36.43300000000045]
+[best clause]
+evasao(20927090).
+[positive examples left] [76]
+[estimated time to finish (secs)] [701.3328717948718]
+[sat] [155]
+[clauses constructed] [10000]
+[search time] [34.08399999999983]
+[best clause]
+evasao(20937056).
+[positive examples left] [75]
+[estimated time to finish (secs)] [700.0375531914895]
+[sat] [156]
+[clauses constructed] [10000]
+[search time] [25.34900000000016]
+[best clause]
+evasao(20937058).
+[positive examples left] [74]
+[estimated time to finish (secs)] [695.7254237288136]
+[sat] [157]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,37), cor_aluno(A,'Parda'), genero_aluno(A,'M'), cidade(A,'Rio de Janeiro'), 
+   classe_idade_aluno(A,'B').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,6,2]]
+[clauses constructed] [8951]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [50.05000000000018]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,37), cor_aluno(A,'Parda'), genero_aluno(A,'M'), cidade(A,'Rio de Janeiro'), 
+   classe_idade_aluno(A,'B').
+[positive examples left] [72]
+[estimated time to finish (secs)] [686.3747899159664]
+[sat] [158]
+[clauses constructed] [10000]
+[search time] [28.94500000000016]
+[best clause]
+evasao(20937063).
+[positive examples left] [71]
+[estimated time to finish (secs)] [682.6085564853558]
+[sat] [160]
+[clauses constructed] [10000]
+[search time] [25.72200000000021]
+[best clause]
+evasao(20937083).
+[positive examples left] [70]
+[estimated time to finish (secs)] [677.6924583333335]
+[sat] [162]
+[clauses constructed] [10000]
+[search time] [11.06400000000031]
+[best clause]
+evasao(20937090).
+[positive examples left] [69]
+[estimated time to finish (secs)] [668.4070082987555]
+[sat] [163]
+[clauses constructed] [10000]
+[search time] [70.51699999999983]
+[best clause]
+evasao(20937093).
+[positive examples left] [68]
+[estimated time to finish (secs)] [675.812661157025]
+[sat] [166]
+[clauses constructed] [10000]
+[search time] [8.820999999999913]
+[best clause]
+evasao(20942065).
+[positive examples left] [67]
+[estimated time to finish (secs)] [665.566144032922]
+[sat] [168]
+[clauses constructed] [10000]
+[search time] [9.342999999999847]
+[best clause]
+evasao(20942073).
+[positive examples left] [66]
+[estimated time to finish (secs)] [655.4725081967215]
+[sat] [169]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   curso_aluno(A,42), cor_aluno(A,'Parda'), tem_facebook(A,0), classe_idade_aluno(A,'A').
+[pos cover = 5 neg cover = 3] [pos-neg] [2]
+[clause label] [[5,3,5,2]]
+[clauses constructed] [9957]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [32.57400000000007]
+[best clause]
+evasao(A) :-
+   curso_aluno(A,42), cor_aluno(A,'Parda'), tem_facebook(A,0), classe_idade_aluno(A,'A').
+[positive examples left] [61]
+[estimated time to finish (secs)] [601.6305060240966]
+[sat] [171]
+[clauses constructed] [10000]
+[search time] [12.83699999999999]
+[best clause]
+evasao(20942087).
+[positive examples left] [60]
+[estimated time to finish (secs)] [592.4815200000002]
+[sat] [172]
+[clauses constructed] [10000]
+[search time] [87.53800000000001]
+[best clause]
+evasao(20942091).
+[positive examples left] [59]
+[estimated time to finish (secs)] [600.862346613546]
+[sat] [173]
+[clauses constructed] [10000]
+[search time] [74.02700000000004]
+[best clause]
+evasao(20942092).
+[positive examples left] [58]
+[estimated time to finish (secs)] [605.3722380952382]
+[sat] [176]
+[clauses constructed] [10000]
+[search time] [7.126999999999953]
+[best clause]
+evasao(20942122).
+[positive examples left] [57]
+[estimated time to finish (secs)] [594.1889525691702]
+[sat] [181]
+[clauses constructed] [10000]
+[search time] [6.444000000000415]
+[best clause]
+evasao(21015102).
+[positive examples left] [56]
+[estimated time to finish (secs)] [582.8870236220475]
+[sat] [184]
+[clauses constructed] [10000]
+[search time] [9.831000000000131]
+[best clause]
+evasao(21015108).
+[positive examples left] [55]
+[estimated time to finish (secs)] [572.3537254901963]
+[sat] [186]
+[clauses constructed] [10000]
+[search time] [14.42099999999982]
+[best clause]
+evasao(21015111).
+[positive examples left] [54]
+[estimated time to finish (secs)] [562.7941171875002]
+[sat] [188]
+[clauses constructed] [10000]
+[search time] [13.61899999999969]
+[best clause]
+evasao(21015116).
+[positive examples left] [53]
+[estimated time to finish (secs)] [553.0312840466928]
+[sat] [190]
+[clauses constructed] [10000]
+[search time] [7.661999999999807]
+[best clause]
+evasao(21015122).
+[positive examples left] [52]
+[estimated time to finish (secs)] [542.0379224806203]
+[sat] [193]
+[clauses constructed] [10000]
+[search time] [2.690999999999804]
+[best clause]
+evasao(21015130).
+[positive examples left] [51]
+[estimated time to finish (secs)] [530.0914401544402]
+[sat] [195]
+[clauses constructed] [10000]
+[search time] [3.186000000000149]
+[best clause]
+evasao(21015132).
+[positive examples left] [50]
+[estimated time to finish (secs)] [518.3113461538462]
+[sat] [200]
+[clauses constructed] [10000]
+[search time] [2.951000000000022]
+[best clause]
+evasao(21015140).
+[positive examples left] [49]
+[estimated time to finish (secs)] [506.5529885057472]
+[sat] [208]
+[clauses constructed] [10000]
+[search time] [11.04299999999967]
+[best clause]
+evasao(21027106).
+[positive examples left] [48]
+[estimated time to finish (secs)] [496.3443664122138]
+[sat] [210]
+[clauses constructed] [10000]
+[search time] [45.54700000000003]
+[best clause]
+evasao(21027110).
+[positive examples left] [47]
+[estimated time to finish (secs)] [492.2955133079848]
+[sat] [211]
+[clauses constructed] [10000]
+[search time] [8.996999999999844]
+[best clause]
+evasao(21027111).
+[positive examples left] [46]
+[estimated time to finish (secs)] [481.5637196969697]
+[sat] [213]
+[clauses constructed] [10000]
+[search time] [20.83199999999988]
+[best clause]
+evasao(21027118).
+[positive examples left] [45]
+[estimated time to finish (secs)] [472.8547358490566]
+[sat] [218]
+[clauses constructed] [10000]
+[search time] [2.768999999999778]
+[best clause]
+evasao(21027150).
+[positive examples left] [44]
+[estimated time to finish (secs)] [461.0667368421052]
+[sat] [220]
+[clauses constructed] [10000]
+[search time] [3.067000000000007]
+[best clause]
+evasao(21027152).
+[positive examples left] [43]
+[estimated time to finish (secs)] [449.3942883895131]
+[sat] [221]
+[clauses constructed] [10000]
+[search time] [57.61700000000019]
+[best clause]
+evasao(21027154).
+[positive examples left] [42]
+[estimated time to finish (secs)] [446.3349402985074]
+[sat] [222]
+[clauses constructed] [10000]
+[search time] [3.159999999999854]
+[best clause]
+evasao(21027156).
+[positive examples left] [41]
+[estimated time to finish (secs)] [434.5698215613382]
+[sat] [223]
+[clauses constructed] [10000]
+[search time] [3.144999999999982]
+[best clause]
+evasao(21027157).
+[positive examples left] [40]
+[estimated time to finish (secs)] [422.8662222222222]
+[sat] [227]
+[clauses constructed] [10000]
+[search time] [3.019999999999982]
+[best clause]
+evasao(21027161).
+[positive examples left] [39]
+[estimated time to finish (secs)] [411.2077970479705]
+[sat] [230]
+[clauses constructed] [10000]
+[search time] [2.934999999999945]
+[best clause]
+evasao(21027164).
+[positive examples left] [38]
+[estimated time to finish (secs)] [399.6010147058823]
+[sat] [231]
+[clauses constructed] [10000]
+[search time] [56.07999999999993]
+[best clause]
+evasao(21027166).
+[positive examples left] [37]
+[estimated time to finish (secs)] [395.260564102564]
+[sat] [232]
+[clauses constructed] [10000]
+[search time] [9.535000000000309]
+[best clause]
+evasao(21027167).
+[positive examples left] [36]
+[estimated time to finish (secs)] [384.4270510948905]
+[sat] [235]
+[clauses constructed] [10000]
+[search time] [6.843000000000302]
+[best clause]
+evasao(21037085).
+[positive examples left] [35]
+[estimated time to finish (secs)] [373.2603636363636]
+[sat] [237]
+[clauses constructed] [10000]
+[search time] [61.46100000000024]
+[best clause]
+evasao(21037103).
+[positive examples left] [34]
+[estimated time to finish (secs)] [368.8533115942029]
+[sat] [239]
+[clauses constructed] [10000]
+[search time] [3.18100000000004]
+[best clause]
+evasao(21037130).
+[positive examples left] [33]
+[estimated time to finish (secs)] [357.09121299639]
+[sat] [240]
+[clauses constructed] [10000]
+[search time] [2.644000000000233]
+[best clause]
+evasao(21037131).
+[positive examples left] [32]
+[estimated time to finish (secs)] [345.3290359712231]
+[sat] [241]
+[clauses constructed] [10000]
+[search time] [3.15099999999984]
+[best clause]
+evasao(21037134).
+[positive examples left] [31]
+[estimated time to finish (secs)] [333.6885555555556]
+[sat] [242]
+[clauses constructed] [10000]
+[search time] [2.724999999999909]
+[best clause]
+evasao(21037136).
+[positive examples left] [30]
+[estimated time to finish (secs)] [322.0630714285715]
+[sat] [243]
+[clauses constructed] [10000]
+[search time] [3.020999999999731]
+[best clause]
+evasao(21037137).
+[positive examples left] [29]
+[estimated time to finish (secs)] [310.5314839857651]
+[sat] [244]
+[clauses constructed] [10000]
+[search time] [2.956000000000131]
+[best clause]
+evasao(21037138).
+[positive examples left] [28]
+[estimated time to finish (secs)] [299.0538014184397]
+[sat] [246]
+[clauses constructed] [10000]
+[search time] [20.3130000000001]
+[best clause]
+evasao(21042131).
+[positive examples left] [27]
+[estimated time to finish (secs)] [289.2923109540637]
+[sat] [248]
+[clauses constructed] [10000]
+[search time] [2.881999999999607]
+[best clause]
+evasao(21042154).
+[positive examples left] [26]
+[estimated time to finish (secs)] [277.8607183098592]
+[sat] [249]
+[clauses constructed] [10000]
+[search time] [2.710999999999785]
+[best clause]
+evasao(21042155).
+[positive examples left] [25]
+[estimated time to finish (secs)] [266.4741228070175]
+[sat] [254]
+[clauses constructed] [10000]
+[search time] [57.4380000000001]
+[best clause]
+evasao(21042161).
+[positive examples left] [24]
+[estimated time to finish (secs)] [259.7406713286713]
+[sat] [258]
+[clauses constructed] [10000]
+[search time] [3.062000000000353]
+[best clause]
+evasao(21042165).
+[positive examples left] [23]
+[estimated time to finish (secs)] [248.2962195121952]
+[sat] [259]
+[clauses constructed] [10000]
+[search time] [3.03899999999976]
+[best clause]
+evasao(21042167).
+[positive examples left] [22]
+[estimated time to finish (secs)] [236.9082222222222]
+[sat] [260]
+[clauses constructed] [10000]
+[search time] [3.027999999999793]
+[best clause]
+evasao(21042172).
+[positive examples left] [21]
+[estimated time to finish (secs)] [225.5772041522491]
+[sat] [265]
+[clauses constructed] [10000]
+[search time] [49.39599999999973]
+[best clause]
+evasao(21042177).
+[positive examples left] [20]
+[estimated time to finish (secs)] [217.5012413793103]
+[sat] [267]
+[clauses constructed] [10000]
+[search time] [2.992000000000189]
+[best clause]
+evasao(21042180).
+[positive examples left] [19]
+[estimated time to finish (secs)] [206.1114776632302]
+[sat] [269]
+[clauses constructed] [10000]
+[search time] [3.073999999999614]
+[best clause]
+evasao(21042183).
+[positive examples left] [18]
+[estimated time to finish (secs)] [194.7842876712328]
+[sat] [270]
+[clauses constructed] [10000]
+[search time] [2.728999999999814]
+[best clause]
+evasao(21042186).
+[positive examples left] [17]
+[estimated time to finish (secs)] [183.4934163822525]
+[sat] [272]
+[clauses constructed] [10000]
+[search time] [3.016999999999825]
+[best clause]
+evasao(21042188).
+[positive examples left] [16]
+[estimated time to finish (secs)] [172.276462585034]
+[sat] [273]
+[clauses constructed] [10000]
+[search time] [2.789999999999964]
+[best clause]
+evasao(21042189).
+[positive examples left] [15]
+[estimated time to finish (secs)] [161.1035593220338]
+[sat] [274]
+[clauses constructed] [10000]
+[search time] [3.201999999999771]
+[best clause]
+evasao(21042190).
+[positive examples left] [14]
+[estimated time to finish (secs)] [150.0067837837837]
+[sat] [279]
+[clauses constructed] [10000]
+[search time] [23.41700000000037]
+[best clause]
+evasao(30937097).
+[positive examples left] [13]
+[estimated time to finish (secs)] [139.8480033670033]
+[sat] [280]
+[clauses constructed] [10000]
+[search time] [9.895000000000437]
+[best clause]
+evasao(30942123).
+[positive examples left] [12]
+[estimated time to finish (secs)] [129.0557315436241]
+[sat] [281]
+[clauses constructed] [10000]
+[search time] [7.900000000000091]
+[best clause]
+evasao(31027136).
+[positive examples left] [11]
+[estimated time to finish (secs)] [118.1960668896321]
+[sat] [283]
+[clauses constructed] [10000]
+[search time] [14.54599999999982]
+[best clause]
+evasao(31037049).
+[positive examples left] [10]
+[estimated time to finish (secs)] [107.5776666666667]
+[sat] [284]
+[-------------------------------------]
+[found clause]
+evasao(A) :-
+   classe_idade_aluno(A,'').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,2,2]]
+[clauses constructed] [18]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [2.877999999999702]
+[best clause]
+evasao(A) :-
+   classe_idade_aluno(A,'').
+[positive examples left] [8]
+[estimated time to finish (secs)] [85.56842384105958]
+[sat] [287]
+[clauses constructed] [10000]
+[search time] [17.11999999999989]
+[best clause]
+evasao(40937053).
+[positive examples left] [7]
+[estimated time to finish (secs)] [75.02077887788778]
+[sat] [288]
+[clauses constructed] [10000]
+[search time] [4.195999999999913]
+[best clause]
+evasao(40937115).
+[positive examples left] [6]
+[estimated time to finish (secs)] [64.17481578947366]
+[sat] [294]
+[clauses constructed] [10000]
+[search time] [8.465000000000146]
+[best clause]
+evasao(41027095).
+[positive examples left] [5]
+[estimated time to finish (secs)] [53.44244262295081]
+[sat] [297]
+[clauses constructed] [10000]
+[search time] [9.133000000000266]
+[best clause]
+evasao(41027172).
+[positive examples left] [4]
+[estimated time to finish (secs)] [42.73362091503267]
+[sat] [298]
+[clauses constructed] [10000]
+[search time] [12.82999999999993]
+[best clause]
+evasao(41037143).
+[positive examples left] [3]
+[estimated time to finish (secs)] [32.07119218241041]
+[sat] [300]
+[clauses constructed] [10000]
+[search time] [3.432999999999993]
+[best clause]
+evasao(41042093).
+[positive examples left] [2]
+[estimated time to finish (secs)] [21.33366883116883]
+[sat] [303]
+[clauses constructed] [10000]
+[search time] [13.11499999999978]
+[best clause]
+evasao(60927044).
+[positive examples left] [1]
+[estimated time to finish (secs)] [10.6747572815534]
+[sat] [307]
+[positive examples left] [0]
+[estimated time to finish (secs)] [0]
+
+[theory]
+
+[Rule 1] [Pos cover = 22 Neg cover = 7]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'N?o Declarado').
+
+[Rule 2] [Pos cover = 25 Neg cover = 9]
+evasao(A) :-
+   genero_aluno(A,'M'), classe_idade_aluno(A,'C').
+
+[Rule 3] [Pos cover = 8 Neg cover = 1]
+evasao(A) :-
+   classe_idade_aluno(A,'E').
+
+[Rule 4] [Pos cover = 8 Neg cover = 5]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'N?o Declarado'), classe_idade_aluno(A,'B').
+
+[Rule 5] [Pos cover = 9 Neg cover = 3]
+evasao(A) :-
+   classe_idade_aluno(A,'D').
+
+[Rule 13] [Pos cover = 13 Neg cover = 10]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), genero_aluno(A,'F'), tem_facebook(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+
+[Rule 14] [Pos cover = 2 Neg cover = 0]
+evasao(A) :-
+   curso_aluno(A,15), genero_aluno(A,'M'), estado_civil(A,'Solteiro(a)'), cidade(A,'Nova Friburgo').
+
+[Rule 15] [Pos cover = 6 Neg cover = 0]
+evasao(A) :-
+   curso_aluno(A,15), cor_aluno(A,'Branca'), estado_civil(A,'Solteiro(a)'), tem_facebook(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'B').
+
+[Rule 16] [Pos cover = 2 Neg cover = 0]
+evasao(A) :-
+   cidade(A,'Barra Mansa').
+
+[Rule 19] [Pos cover = 10 Neg cover = 4]
+evasao(A) :-
+   ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C), tem_facebook(A,0), cidade(A,'S?o Goncalo').
+
+[Rule 29] [Pos cover = 6 Neg cover = 0]
+evasao(A) :-
+   cidade(A,'Juiz de Fora').
+
+[Rule 32] [Pos cover = 4 Neg cover = 1]
+evasao(A) :-
+   cor_aluno(A,'Negra'), genero_aluno(A,'M'), tem_facebook(A,0), cidade(A,'Rio de Janeiro').
+
+[Rule 38] [Pos cover = 3 Neg cover = 0]
+evasao(A) :-
+   cor_aluno(A,'Indigena'), tem_facebook(A,0).
+
+[Rule 40] [Pos cover = 5 Neg cover = 0]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), estado_civil(A,'').
+
+[Rule 41] [Pos cover = 3 Neg cover = 0]
+evasao(A) :-
+   cor_aluno(A,'Amarela'), genero_aluno(A,'M').
+
+[Rule 50] [Pos cover = 17 Neg cover = 9]
+evasao(A) :-
+   curso_aluno(A,42), cor_aluno(A,'Branca'), genero_aluno(A,'M'), tem_twitter(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+
+[Rule 53] [Pos cover = 7 Neg cover = 3]
+evasao(A) :-
+   cor_aluno(A,'N?o Declarado'), genero_aluno(A,'M'), tem_facebook(A,0), tem_twitter(A,0), 
+   cidade(A,'Rio de Janeiro'), classe_idade_aluno(A,'A').
+
+[Rule 60] [Pos cover = 4 Neg cover = 0]
+evasao(A) :-
+   cidade(A,'Duque de Caxias').
+
+[Rule 67] [Pos cover = 4 Neg cover = 2]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'N?o Declarado'), resultado_aluno_turma(A,reprovado,B,C,D,E), professor_turma(F,C,B,G), 
+   classe_idade_aluno(A,'A').
+
+[Rule 71] [Pos cover = 11 Neg cover = 7]
+evasao(A) :-
+   curso_aluno(A,27), cor_aluno(A,'Parda'), classe_idade_aluno(A,'A').
+
+[Rule 74] [Pos cover = 4 Neg cover = 1]
+evasao(A) :-
+   tem_facebook(A,0), cidade(A,'Vila Velha').
+
+[Rule 81] [Pos cover = 3 Neg cover = 0]
+evasao(A) :-
+   estado_civil(A,'N?o informado').
+
+[Rule 102] [Pos cover = 2 Neg cover = 0]
+evasao(A) :-
+   curso_aluno(A,37), cor_aluno(A,'Parda'), genero_aluno(A,'M'), cidade(A,'Rio de Janeiro'), 
+   classe_idade_aluno(A,'B').
+
+[Rule 109] [Pos cover = 6 Neg cover = 3]
+evasao(A) :-
+   curso_aluno(A,42), cor_aluno(A,'Parda'), tem_facebook(A,0), classe_idade_aluno(A,'A').
+
+[Rule 161] [Pos cover = 2 Neg cover = 0]
+evasao(A) :-
+   classe_idade_aluno(A,'').
+
+[Training set performance]
+           Actual
+        +          -  
+     + 171        64        235 
+Pred 
+     - 139        434        573 
+
+       310        498        808 
+
+Accuracy = 0.7487623762376238
+[Training set summary] [[171,64,139,434]]
+[time taken] [3305.349]
+
+[total clauses constructed] [1680000]

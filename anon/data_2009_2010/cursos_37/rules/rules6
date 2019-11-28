@@ -1,0 +1,10 @@
+evasao(A,B) :-
+   genero_aluno(A,'M'), ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), cidade(A,'Rio de Janeiro').
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').
+evasao(A,B) :-
+   resultado_aluno_turma(A,reprovado,C,D,E,F), resultado_aluno_turma(A,aprovado,C,G,H,I), cidade(A,'S?o Goncalo'), classe_idade_aluno(A,'A').
+evasao(A,B) :-
+   cidade(A,'Niteroi'), classe_idade_aluno(A,'D').
+evasao(A,B) :-
+   cor_aluno(A,'Parda'), classe_idade_aluno(A,'E').

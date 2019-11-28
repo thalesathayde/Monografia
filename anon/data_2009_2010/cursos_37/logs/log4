@@ -1,0 +1,410 @@
+
+[settings]
+        abduce=false
+        cache_clauselength=3
+        caching=false
+        check_good=false
+        check_redundant=false
+        check_useless=false
+        clauselength=10
+        condition=false
+        confidence= 0.95
+        construct_bottom=saturation
+        depth=10
+        evalfn=coverage
+        explore=false
+        good=false
+        greedy=true
+        gsamplesize=100
+        i=2
+        interactive=false
+        language=(+inf)
+        lazy_negs=false
+        lazy_on_contradiction=false
+        lazy_on_cost=false
+        lookahead=1
+        max_abducibles=2
+        max_features=(+inf)
+        minacc= 0
+        mingain= 0.05
+        minpos=2
+        minposfrac=0
+        minscore=(-inf)
+        moves=5
+        newvars=(+inf)
+        nodes=10000
+        noise=10
+        nreduce_bottom=false
+        openlist=(+inf)
+        optimise_clauses=false
+        permute_bottom=false
+        portray_examples=false
+        portray_hypothesis=false
+        portray_literals=false
+        portray_search=false
+        print=4
+        prior=[0.3254437869822485-pos,0.6745562130177515-neg]
+        proof_strategy=restricted_sld
+        prooftime=(+inf)
+        prune_tree=false
+        record=true
+        recordfile=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/new_target/cursos_37//logs/log4
+        recordfile_stream=$stream(5)
+        refine=false
+        refineop=false
+        resample=1
+        rls_type=gsat
+        samplesize=0
+        search=bf
+        searchstrat=bf
+        searchtime=(+inf)
+        skolemvars=10000
+        splitvars=false
+        stage=command
+        store_bottom=false
+        subsample=false
+        subsamplesize=(+inf)
+        test_neg=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/new_target/cursos_37/test_evasao4.n
+        test_pos=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/new_target/cursos_37/test_evasao4.f
+        threads=1
+        train_neg=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/new_target/cursos_37//train_evasao4.n
+        train_pos=/Users/hugohenley/Dropbox/Mestrado/Dissertacao/aleph/evasao/script/new_target/cursos_37//train_evasao4.f
+        tries=10
+        typeoverlap= 0.95
+        uniform_sample=false
+        updateback=true
+        verbosity=1
+        version=5
+[sat] [1]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   genero_aluno(A,'M'), ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), cidade(A,'Rio de Janeiro').
+[pos cover = 12 neg cover = 9] [pos-neg] [3]
+[clause label] [[12,9,5,3]]
+[clauses constructed] [2258]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [5.079]
+[best clause]
+evasao(A,B) :-
+   genero_aluno(A,'M'), ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), cidade(A,'Rio de Janeiro').
+[positive examples left] [43]
+[estimated time to finish (secs)] [18.19975]
+[sat] [3]
+[clauses constructed] [10000]
+[search time] [4.543]
+[best clause]
+evasao(40937053,37).
+[positive examples left] [42]
+[estimated time to finish (secs)] [31.08646153846154]
+[sat] [5]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').
+[pos cover = 6 neg cover = 4] [pos-neg] [2]
+[clause label] [[6,4,2,2]]
+[clauses constructed] [123]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.125999999999999]
+[best clause]
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').
+[positive examples left] [36]
+[estimated time to finish (secs)] [26.04884210526316]
+[sat] [6]
+[clauses constructed] [10000]
+[search time] [4.074]
+[best clause]
+evasao(10937013,37).
+[positive examples left] [35]
+[estimated time to finish (secs)] [31.1885]
+[sat] [7]
+[clauses constructed] [10000]
+[search time] [4.370000000000001]
+[best clause]
+evasao(11037005,37).
+[positive examples left] [34]
+[estimated time to finish (secs)] [35.92990476190477]
+[sat] [9]
+[clauses constructed] [10000]
+[search time] [2.103000000000002]
+[best clause]
+evasao(21037136,37).
+[positive examples left] [33]
+[estimated time to finish (secs)] [36.4425]
+[sat] [11]
+[clauses constructed] [10000]
+[search time] [3.446999999999999]
+[best clause]
+evasao(1037081,37).
+[positive examples left] [32]
+[estimated time to finish (secs)] [38.59756521739131]
+[sat] [12]
+[clauses constructed] [10000]
+[search time] [4.212000000000003]
+[best clause]
+evasao(21037120,37).
+[positive examples left] [31]
+[estimated time to finish (secs)] [41.27391666666667]
+[sat] [13]
+[clauses constructed] [10000]
+[search time] [3.090000000000003]
+[best clause]
+evasao(20937071,37).
+[positive examples left] [30]
+[estimated time to finish (secs)] [42.05280000000002]
+[sat] [14]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   cidade(A,'S?o Goncalo').
+[pos cover = 4 neg cover = 2] [pos-neg] [2]
+[clause label] [[4,2,2,2]]
+[clauses constructed] [34]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [6.978999999999999]
+[best clause]
+evasao(A,B) :-
+   cidade(A,'S?o Goncalo').
+[positive examples left] [26]
+[estimated time to finish (secs)] [37.67579310344829]
+[sat] [15]
+[clauses constructed] [10000]
+[search time] [2.300999999999995]
+[best clause]
+evasao(21037131,37).
+[positive examples left] [25]
+[estimated time to finish (secs)] [36.93666666666667]
+[sat] [18]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   genero_aluno(A,'M'), cidade(A,'Niteroi'), classe_idade_aluno(A,'D').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,4,2]]
+[clauses constructed] [937]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.743000000000002]
+[best clause]
+evasao(A,B) :-
+   genero_aluno(A,'M'), cidade(A,'Niteroi'), classe_idade_aluno(A,'D').
+[positive examples left] [23]
+[estimated time to finish (secs)] [35.26690625000001]
+[sat] [19]
+[clauses constructed] [10000]
+[search time] [3.869]
+[best clause]
+evasao(20937056,37).
+[positive examples left] [22]
+[estimated time to finish (secs)] [35.29066666666667]
+[sat] [21]
+[clauses constructed] [10000]
+[search time] [4.430999999999997]
+[best clause]
+evasao(10937021,37).
+[positive examples left] [21]
+[estimated time to finish (secs)] [35.43255882352941]
+[sat] [22]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   classe_idade_aluno(A,'').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,2,2]]
+[clauses constructed] [18]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [2.055999999999997]
+[best clause]
+evasao(A,B) :-
+   classe_idade_aluno(A,'').
+[positive examples left] [19]
+[estimated time to finish (secs)] [31.36213888888889]
+[sat] [23]
+[clauses constructed] [10000]
+[search time] [4.728000000000002]
+[best clause]
+evasao(10937007,37).
+[positive examples left] [18]
+[estimated time to finish (secs)] [31.2085945945946]
+[sat] [25]
+[clauses constructed] [10000]
+[search time] [2.516000000000005]
+[best clause]
+evasao(21037134,37).
+[positive examples left] [17]
+[estimated time to finish (secs)] [29.82471052631579]
+[sat] [27]
+[clauses constructed] [10000]
+[search time] [3.585000000000008]
+[best clause]
+evasao(30937097,37).
+[positive examples left] [16]
+[estimated time to finish (secs)] [28.82133333333334]
+[sat] [28]
+[-------------------------------------]
+[found clause]
+evasao(A,B) :-
+   ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), tem_facebook(A,0), cidade(A,'Vila Velha').
+[pos cover = 2 neg cover = 0] [pos-neg] [2]
+[clause label] [[2,0,5,2]]
+[clauses constructed] [3659]
+[-------------------------------------]
+[clauses constructed] [10000]
+[search time] [4.504999999999995]
+[best clause]
+evasao(A,B) :-
+   ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), tem_facebook(A,0), cidade(A,'Vila Velha').
+[positive examples left] [14]
+[estimated time to finish (secs)] [25.52678048780488]
+[sat] [29]
+[clauses constructed] [10000]
+[search time] [3.884]
+[best clause]
+evasao(10937026,37).
+[positive examples left] [13]
+[estimated time to finish (secs)] [24.34126190476191]
+[sat] [30]
+[clauses constructed] [10000]
+[search time] [2.180999999999997]
+[best clause]
+evasao(21037130,37).
+[positive examples left] [12]
+[estimated time to finish (secs)] [22.55497674418605]
+[sat] [34]
+[clauses constructed] [10000]
+[search time] [3.733000000000004]
+[best clause]
+evasao(11037040,37).
+[positive examples left] [11]
+[estimated time to finish (secs)] [21.13875000000001]
+[sat] [35]
+[clauses constructed] [10000]
+[search time] [2.109999999999999]
+[best clause]
+evasao(21037137,37).
+[positive examples left] [10]
+[estimated time to finish (secs)] [19.25888888888889]
+[sat] [38]
+[clauses constructed] [10000]
+[search time] [2.201999999999998]
+[best clause]
+evasao(40937115,37).
+[positive examples left] [9]
+[estimated time to finish (secs)] [17.38702173913044]
+[sat] [42]
+[clauses constructed] [10000]
+[search time] [2.935999999999993]
+[best clause]
+evasao(10937003,37).
+[positive examples left] [8]
+[estimated time to finish (secs)] [15.62604255319149]
+[sat] [45]
+[clauses constructed] [10000]
+[search time] [4.408000000000001]
+[best clause]
+evasao(20937093,37).
+[positive examples left] [7]
+[estimated time to finish (secs)] [14.03077083333334]
+[sat] [46]
+[clauses constructed] [10000]
+[search time] [5.155999999999992]
+[best clause]
+evasao(30937051,37).
+[positive examples left] [6]
+[estimated time to finish (secs)] [12.41228571428571]
+[sat] [48]
+[clauses constructed] [10000]
+[search time] [4.662999999999997]
+[best clause]
+evasao(11037065,37).
+[positive examples left] [5]
+[estimated time to finish (secs)] [10.603]
+[sat] [49]
+[clauses constructed] [10000]
+[search time] [4.673999999999992]
+[best clause]
+evasao(20937063,37).
+[positive examples left] [4]
+[estimated time to finish (secs)] [8.682666666666666]
+[sat] [52]
+[clauses constructed] [10000]
+[search time] [3.805999999999997]
+[best clause]
+evasao(20937090,37).
+[positive examples left] [3]
+[estimated time to finish (secs)] [6.606346153846153]
+[sat] [53]
+[clauses constructed] [10000]
+[search time] [3.762]
+[best clause]
+evasao(10937029,37).
+[positive examples left] [2]
+[estimated time to finish (secs)] [4.463094339622641]
+[sat] [54]
+[clauses constructed] [10000]
+[search time] [3.176000000000002]
+[best clause]
+evasao(20937083,37).
+[positive examples left] [1]
+[estimated time to finish (secs)] [2.249037037037037]
+[sat] [55]
+[positive examples left] [0]
+[estimated time to finish (secs)] [0]
+
+[theory]
+
+[Rule 1] [Pos cover = 12 Neg cover = 9]
+evasao(A,B) :-
+   genero_aluno(A,'M'), ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), cidade(A,'Rio de Janeiro').
+
+[Rule 3] [Pos cover = 7 Neg cover = 4]
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').
+
+[Rule 10] [Pos cover = 5 Neg cover = 2]
+evasao(A,B) :-
+   cidade(A,'S?o Goncalo').
+
+[Rule 12] [Pos cover = 2 Neg cover = 0]
+evasao(A,B) :-
+   genero_aluno(A,'M'), cidade(A,'Niteroi'), classe_idade_aluno(A,'D').
+
+[Rule 15] [Pos cover = 2 Neg cover = 0]
+evasao(A,B) :-
+   classe_idade_aluno(A,'').
+
+[Rule 19] [Pos cover = 2 Neg cover = 0]
+evasao(A,B) :-
+   ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), tem_facebook(A,0), cidade(A,'Vila Velha').
+
+[Training set performance]
+           Actual
+        +          -  
+     + 28        14        42 
+Pred 
+     - 27        100        127 
+
+       55        114        169 
+
+Accuracy = 0.757396449704142
+[Training set summary] [[28,14,27,100]]
+[Test set performance]
+          Actual
+       +        - 
+     + 3        3        6 
+Pred 
+     - 3        9        12 
+
+       6        12        18 
+
+Accuracy = 0.6666666666666666
+[Test set summary] [[3,3,3,9]]
+[time taken] [121.985]
+
+[total clauses constructed] [320000]

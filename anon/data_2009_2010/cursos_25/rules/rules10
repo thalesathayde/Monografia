@@ -1,0 +1,8 @@
+evasao(A,B) :-
+   ano_semestre_ingresso(A,C,D), resultado_aluno_turma(A,reprovado,E,F,C,D), tem_facebook(A,0).
+evasao(A,B) :-
+   classe_idade_aluno(A,'A').
+evasao(A,B) :-
+   estado_civil(A,'Solteiro(a)'), classe_idade_aluno(A,'B').
+evasao(A,B) :-
+   classe_idade_aluno(A,'C').

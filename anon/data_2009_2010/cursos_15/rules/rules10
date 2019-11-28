@@ -1,0 +1,12 @@
+evasao(A) :-
+   ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C), tem_facebook(A,0), classe_idade_aluno(A,'B').
+evasao(A) :-
+   cor_aluno(A,[66,114,97,110,99,97]), genero_aluno(A,[77]), estado_civil(A,[83,111,108,116,101,105,114,111,40,97,41]), classe_idade_aluno(A,'B').
+evasao(A) :-
+   cor_aluno(A,[66,114,97,110,99,97]), tem_facebook(A,0), cidade(A,[82,105,111,32,100,101,32,74,97,110,101,105,114,111]).
+evasao(A) :-
+   cor_aluno(A,[78,63,111,32,68,101,99,108,97,114,97,100,111]), ano_semestre_ingresso(A,B,C), resultado_aluno_turma(A,reprovado,D,E,B,C).
+evasao(A) :-
+   cidade(A,[68,117,113,117,101,32,100,101,32,67,97,120,105,97,115]).
+evasao(A) :-
+   estado_civil(A,[83,111,108,116,101,105,114,111,40,97,41]), tem_facebook(A,0), classe_idade_aluno(A,'C').
